@@ -11,9 +11,12 @@
     "url": "https://github.com/htmlacademy-javascript/1819805-kekstagram-25/issues"
   },
   "devDependencies": {
-    "browser-sync": "2.27.7",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "browser-sync": "^0.9.1",
     "eslint": "^8.7.0",
-    "eslint-config-htmlacademy": "5.0.0"
+    "eslint-config-htmlacademy": "5.0.0",
+    "eslint-plugin-react": "^7.29.3"
   },
   "license": "MIT",
   "scripts": {
