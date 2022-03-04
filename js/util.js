@@ -4,18 +4,18 @@ const getRandomPositiveInteger = (a, b) => {
   const result = Math.random() * (upper - lower + 1) + lower;
   return Math.floor(result);
 };
-  const getRandomArrayElement = (elements) => {
-    return elements[getRandomPositiveInteger(0, elements.length - 1)];
-  };
+const getRandomArrayElement = (elements) => {
+  return elements[getRandomPositiveInteger(0, elements.length - 1)];
+};
 const createComments = () => {
 return {
 id: getRandomArrayElement(ID),
 url: 'photos/' + getRandomArrayElement(URL) + '.jpeg ',
-avatar:' img/avatar - ' + getRandomArrayElement(AVATAR) + ' .svg. ',
+avatar: ' img/avatar - ' + getRandomArrayElement(AVATAR) + ' .svg. ',
 message: getRandomArrayElement(MESSAGE) + '',
 name: getRandomArrayElement(NAME) + '',
-likes: getRandomArrayElement(LIKES)
+likes getRandomArrayElement(LIKES)}
 };
-};
+
 
 export {getRandomArrayElement};
