@@ -50,7 +50,9 @@ url: 'photos/' + getRandomArrayElement(URL) + '.jpeg ',
 avatar:' img/avatar - ' + getRandomArrayElement(AVATAR) + ' .svg. ',
 message: getRandomArrayElement(MESSAGE) + '',
 name: getRandomArrayElement(NAME) + '',
-likes: getRandomArrayElement(LIKES)
+likes: getRandomArrayElement(LIKES),
+description: getRandomArrayElement(DESCRIPTION),
+
 };
 };
 
@@ -60,5 +62,4 @@ console.log(
 
 const createSimilarComments = Array.from({length: 25}, createComments);
 console.log(createSimilarComments);
-
 export {createComments};
