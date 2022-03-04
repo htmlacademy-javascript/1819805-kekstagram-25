@@ -1,11 +1,11 @@
-import {getRandomArrayElement} from './util.js';
+/*import {getRandomArrayElement} from './util.js';
 
 /*
 const checkStringLength = (string, length) => {
   return string.length <= length;
 };
 */
-
+/*
 const ID = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
 const URL = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
 const DESCRIPTION = ['Счастлив и рад','Замечательное фото, делюсь','Как же круто выходит','Уверен, такого вы еще не видели','Вау, кто здесь снова оказался'
@@ -45,4 +45,6 @@ console.log(
 
 const createSimilarComments = Array.from({length: 25}, createComments);
 console.log(createSimilarComments);
+
 export {createComments};
+*/
