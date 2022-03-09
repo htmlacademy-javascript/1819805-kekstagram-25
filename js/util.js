@@ -7,10 +7,10 @@ const getRandomPositiveInteger = (a, b) => {
 
 };
 
-
 const getRandomArrayElement = (elements) => {
   return elements[getRandomPositiveInteger(0, elements.length - 1)];
 };
+/*
 const createComments = () => {
 return {
 id: getRandomArrayElement(ID),
@@ -19,5 +19,7 @@ avatar: ' img/avatar - ' + getRandomArrayElement(AVATAR) + ' .svg. ',
 message: getRandomArrayElement(MESSAGE) + '',
 name: getRandomArrayElement(NAME) + '',
 likes: getRandomArrayElement(LIKES)}
+
 }
+*/
 export {getRandomArrayElement};
