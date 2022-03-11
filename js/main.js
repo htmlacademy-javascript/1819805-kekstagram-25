@@ -1,6 +1,3 @@
-import './data.js';
-import {createComments} from './data.js';
-
-
-createComments();
-
+import './data';
+import { createPhotos } from './data';
+createPhotos();
