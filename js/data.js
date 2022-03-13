@@ -1,14 +1,7 @@
-import { getRandomPositiveInteger } from "./util";
+import {getRandomPositiveInteger}  from './js/util.js';
 /* const checkStringLength = (string, length) => {
 return string.length <= length;
 }; */
-/*const getRandomPositiveInteger = (a , b) => {
-  const lower = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
-  const upper = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
-  const result = Math.random() * (upper - lower + 1) + lower;
-  return Math.floor(result);
-}; */
-
 const COUNT = 25;
 const DESCRIPTION = [
   "Счастлив и рад",
@@ -51,4 +44,4 @@ const createComments = () => {
 console.log(createPhotos());
 const createSimilarComments = Array.from({ length: COUNT }, createPhotos);
 console.log(createSimilarComments);
-export { createPhotos };
+console.log(getRandomPositiveInteger);
