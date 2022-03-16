@@ -1,4 +1,4 @@
-import {getRandomPositiveInteger}  from './js/util.js';
+import {getRandomPositiveInteger}  from './util.js';
 /* const checkStringLength = (string, length) => {
 return string.length <= length;
 }; */
@@ -41,7 +41,8 @@ const createComments = () => {
 
   return Array.from({ length: COUNT }, comment);
 };
-console.log(createPhotos());
 const createSimilarComments = Array.from({ length: COUNT }, createPhotos);
-console.log(createSimilarComments);
+createComments();
 console.log(getRandomPositiveInteger);
+
+export {createPhotos}
