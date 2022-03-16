@@ -1,5 +1,3 @@
-import './util.js';
-import { createPhotos } from './data.js';
+import './util';
+import { createPhotos } from './data';
 createPhotos();
-import { getRandomPositiveInteger } from './util.js';
-getRandomPositiveInteger();
