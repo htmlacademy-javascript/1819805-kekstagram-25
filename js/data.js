@@ -43,5 +43,6 @@ const createComments = () => {
 };
 console.log(createPhotos());
 const createSimilarComments = Array.from({ length: COUNT }, createPhotos);
-console.log(createSimilarComments);
 console.log(getRandomPositiveInteger);
+createSimilarComments();
+export {createPhotos}
