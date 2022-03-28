@@ -1,21 +1,18 @@
-import { createPhotos, createComments , amount, MESSAGE} from './data.js';
-import { getRandomPositiveInteger } from './util.js';
+import {createSimilarComments, createPhotos,} from './data.js';
 
-const listOfPhotos = document.querySelector('.picture');
-const similarPhotos = createPhotos(25);
-console.log(createPhotos(25));
+const listOfPhotos = document.querySelector('.pictures');
 const template = document
   .querySelector('#picture')
   .content.querySelector('.picture');
 const fragmentOfPhotos = document.createDocumentFragment();
 
-similarPhotos.forEach(() => {
+createSimilarComments.forEach(({url, likes , comments}) => {
   const pictureElement = template.cloneNode(true);
-  pictureElement.querySelector('.picture__img').src = "photos/" + amount + ".jpg ";
-  pictureElement.querySelector('.picture__likes').textContent = getRandomPositiveInteger(1, MESSAGE.length);
-  pictureElement.querySelector('.picture__comments').textContent = createComments();
+  pictureElement.querySelector('.picture__img').src = url;
+  pictureElement.querySelector('.picture__likes').textContent = likes;
+  pictureElement.querySelector('.picture__comments').textContent = comments;
   fragmentOfPhotos.appendChild(pictureElement);
 });
 
 listOfPhotos.appendChild(fragmentOfPhotos);
-similarPhotos(25);
+// console.log(createSimilarComments(25));
