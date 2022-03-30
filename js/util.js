@@ -8,4 +8,4 @@ const getRandomPositiveInteger = (a, b) => {
 
 
 export {getRandomPositiveInteger};
-getRandomPositiveInteger();
+// getRandomPositiveInteger();
